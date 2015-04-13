@@ -18,7 +18,7 @@ import org.junit.Test;
  *
  */
 
-public abstract class TestesCalcInterface {
+public abstract class TestesICalc {
 	
 	abstract ICalc getInstance();
 
