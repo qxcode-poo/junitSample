@@ -4,26 +4,23 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Calc implements ICalc {
+public class Calc {
 
 	public Calc(){
 		
 	}
 	
-	@Override
 	public int sum(int a, int b) {
 		return a + b;
 	}
 
-	@Override
 	public List<Integer> umAteN(int n) {
-		List<Integer> list = new LinkedList();
+		List<Integer> list = new LinkedList<Integer>();
 		for(int i = 1; i <= n; i++)
 			list.add(i);
 		return list;
 	}
 
-	@Override
 	public int getMaior(Iterator<Integer> it) {
 		int max = it.next();
 		while(it.hasNext()){
