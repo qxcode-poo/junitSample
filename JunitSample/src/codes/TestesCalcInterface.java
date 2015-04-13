@@ -12,16 +12,15 @@ import org.junit.Test;
  * @author tux
  * 
  * Aqui o metodo getInstance retorna uma classe calc 
- * concreta. O teste está voltado para a interface, mas
- * ainda temos que alterar o arquivo para rodar os testes.
+ * concreta. O teste está voltado para a interface,
+ * qualquer classe concreta que implemente essa classe
+ * abstrata e implemente o getInstance poderá rodar os testes.
  *
  */
 
-public class TestesCalcInterface {
+public abstract class TestesCalcInterface {
 	
-	ICalc getInstance(){
-		return new Calc();
-	}
+	abstract ICalc getInstance();
 
 	@Test
 	public void testSum() {
