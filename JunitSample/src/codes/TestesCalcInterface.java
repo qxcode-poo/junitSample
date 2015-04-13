@@ -7,18 +7,32 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class TestesCalcConcreto {
+/**
+ * 
+ * @author tux
+ * 
+ * Aqui o metodo getInstance retorna uma classe calc 
+ * concreta. O teste está voltado para a interface, mas
+ * ainda temos que alterar o arquivo para rodar os testes.
+ *
+ */
+
+public class TestesCalcInterface {
+	
+	ICalc getInstance(){
+		return new Calc();
+	}
 
 	@Test
 	public void testSum() {
-		Calc calc = new Calc();
+		ICalc calc = getInstance();
 		assertTrue(calc.sum(4, 5) == 9);
 		assertFalse(calc.sum(1, 1) == 3);;
 	}
 
 	@Test
 	public void testUmAteN() {
-		Calc calc = new Calc();
+		ICalc calc = getInstance();
 		List<Integer> recebido = calc.umAteN(4);
 		int[] resp = {1, 2, 3, 4};
 		for(int i = 0; i < resp.length; i++){
@@ -37,7 +51,7 @@ public class TestesCalcConcreto {
 		for(int elem : vetor)
 			lista.add(elem);
 		
-		Calc calc = new Calc();
+		ICalc calc = getInstance();
 		assertTrue(calc.getMaior(lista.iterator()) == 8);
 	}
 

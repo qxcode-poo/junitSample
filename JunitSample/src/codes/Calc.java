@@ -17,7 +17,7 @@ public class Calc implements ICalc {
 
 	@Override
 	public List<Integer> umAteN(int n) {
-		List<Integer> list = new LinkedList();
+		List<Integer> list = new LinkedList<Integer>();
 		for(int i = 1; i <= n; i++)
 			list.add(i);
 		return list;
