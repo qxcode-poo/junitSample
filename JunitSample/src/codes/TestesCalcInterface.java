@@ -20,7 +20,7 @@ import org.junit.Test;
 
 public abstract class TestesCalcInterface {
 	
-	abstract ICalc getInstance();
+	public abstract ICalc getInstance();
 
 	@Test
 	public void testSum() {

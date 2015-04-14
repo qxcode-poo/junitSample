@@ -1,8 +1,7 @@
 package codes;
 
 public class TesteCalcInterfaceConcreto extends TestesCalcInterface {
-
-	ICalc getInstance() {
+	public ICalc getInstance() {
 		return new Calc();
 	}
 }
