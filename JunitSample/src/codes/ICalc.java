@@ -10,6 +10,6 @@ public interface ICalc {
 	//retorne uma lista indo de 1 até n incluindo n
 	List<Integer> umAteN(int n);
 	
-	//retorne o maior número dado o iterador passado
+	//retorne o maior número, dado o iterador passado
 	int getMaior(Iterator<Integer> it);
 }
